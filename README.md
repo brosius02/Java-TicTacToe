@@ -1,7 +1,7 @@
 # Java-TicTacToe
 <hr>
 ## Controls<br>&nbsp;
-<img src="tictactoe.jpg" alt="image of game play">
+<img src="tictactoe.JPG">
 
 -You will be asked to choose which location you would like to place your 'X' character. 
 -You will then play until you or the computer wins
