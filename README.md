@@ -3,7 +3,7 @@
 
 
 ### Controls
-<img src="tictactoe.JPG">
+<img src="tictactoe.JPG" height="150" width="150">
 
 -You will be asked to choose which location you would like to place your 'X' character. <br>
 -You will then play until you or the computer wins
