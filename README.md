@@ -5,7 +5,7 @@
 ### Controls
 <img src="tictactoe.JPG">
 
--You will be asked to choose which location you would like to place your 'X' character. 
+-You will be asked to choose which location you would like to place your 'X' character. <br>
 -You will then play until you or the computer wins
   
 ### Getting Started
@@ -25,10 +25,7 @@ You can download the Repository from [here](https://github.com/brosius02/Java-Ti
 
 Follow these instructions to unpackage and install releases found on our [release page](https://github.com/brosius02/Java-TicTacToe/releases).
 
-
-
 Navigate to your download location. Typically in your downloads folder.
-
 
 Now open the jar file. 
 
@@ -45,7 +42,6 @@ And it's downloaded! Now you can break bricks whenever you please.
 ## Authors
 
 * **John Brosius
-# Getting Started
 
 ## License
 
