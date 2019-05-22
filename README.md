@@ -1,12 +1,12 @@
 # Java-TicTacToe
 <hr>
-## Controls
+### Controls
 <img src="tictactoe.JPG">
 
 -You will be asked to choose which location you would like to place your 'X' character. 
 -You will then play until you or the computer wins
   
-## Getting Started
+### Getting Started
 
 Follow these instructions to download a release version of this program and to learn how to install it.
 
