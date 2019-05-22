@@ -1,6 +1,6 @@
 # Java-TicTacToe
 <hr>
-## Controls<br>&nbsp;
+## Controls
 <img src="tictactoe.JPG">
 
 -You will be asked to choose which location you would like to place your 'X' character. 
