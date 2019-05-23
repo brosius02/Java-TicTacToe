@@ -6,12 +6,19 @@ public class Score {
     int score =0;
     int wins;
     int loses;
+    String name;
 
     public Score(){
+
         this.score = score;
     }
     public Score(int score){
         this.score = score;
+        score = score + wins - loses;
+    }
+    public Score(int score, String name){
+        this.score = score;
+        this.name = name;
         score = score + wins - loses;
     }
     public void setScore(int s){
@@ -38,6 +45,15 @@ public class Score {
     }
 
     public int getWins() {
+
         return wins;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
     }
 }
