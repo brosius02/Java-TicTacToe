@@ -1,5 +1,7 @@
 package Games;
 
+import com.sun.tools.javac.Main;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,7 +11,7 @@ public class TicTacToe {
 
     public static void playTicTacToe() throws InterruptedException {
         Scanner input = new Scanner(System.in);
-        int set;
+        int set = 0;
         quit = true;
         boolean sameNumber = true;
         int count = 0;
@@ -25,7 +27,12 @@ public class TicTacToe {
             if(count % 2 == 0){//remainder it is O's turn no remainder X's turn
                 set = input.nextInt();
                 recorder[count] = set;//records locations for AI
+                Check.checkNumbers(recorder, set);
+//Enter the Check Class here to see if the option the user selected is already taken.
                 location.set(set, "X");
+            }
+            else if(set == 999){
+                quit = false;
             }
             //O goes next if 'count' has a remainder
             else{
@@ -34,6 +41,7 @@ public class TicTacToe {
                     int r = rand.nextInt(8);
                     if(recorder[i] == r){
                         i = i + 1;
+                        System.out.println("Print recorder " + recorder[i]+ " print random " + r);
                     }
                     else{
                         recorder[count] = r;//records locations for AI
@@ -49,6 +57,7 @@ public class TicTacToe {
             WinnerLoser.oWins(location);
             count++;
             sameNumber = true;
+            new Main();
             if(count == 9){
                 System.out.println("\nTie\n");
                 quit = false;

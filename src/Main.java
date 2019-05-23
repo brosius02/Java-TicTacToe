@@ -18,6 +18,6 @@ public class Main {
                 play = false;
             }
         }
-
+        System.out.println("Thanks for playing");
     }
 }
