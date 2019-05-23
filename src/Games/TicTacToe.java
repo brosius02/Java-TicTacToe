@@ -18,6 +18,7 @@ public class TicTacToe {
         Random rand = new Random();
         ArrayList <String> location = new ArrayList <>();//This populates to the board and displays
         //where you have placed your markers
+        ArrayList<Integer> recorder1 = new ArrayList <>();
         int[] recorder = new int[9];//records locations of moves for computer and human player
         Board.populateArraySizeToString(location);//Calls and populates the array size
         Board.displayPlayingBoard(location);//displays playing board
@@ -26,8 +27,9 @@ public class TicTacToe {
             //X goes first
             if(count % 2 == 0){//remainder it is O's turn no remainder X's turn
                 set = input.nextInt();
-                recorder[count] = set;//records locations for AI
                 Check.checkNumbers(recorder, set);
+                recorder[count] = set;//records locations for AI
+
 //Enter the Check Class here to see if the option the user selected is already taken.
                 location.set(set, "X");
             }
