@@ -7,79 +7,6 @@ import java.util.Scanner;
 
 public class WinnerLoser {
 
-    public static void xWins(ArrayList<String> location) throws InterruptedException {
-
-        if (location.get(0).equals("X") && location.get(1).equals("X") && location.get(2).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(6).equals("X") && location.get(4).equals("X") && location.get(2).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(6).equals("X") && location.get(7).equals("X") && location.get(8).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(0).equals("X") && location.get(3).equals("X") && location.get(6).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(1).equals("X") && location.get(4).equals("X") && location.get(7).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(2).equals("X") && location.get(5).equals("X") && location.get(8).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        } else if (location.get(0).equals("X") && location.get(4).equals("X") && location.get(8).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        }else if (location.get(3).equals("X") && location.get(4).equals("X") && location.get(5).equals("X")) {
-            System.out.println("X Wins");
-            XWINS();
-            playAgain();
-        }
-
-    }
-    public static void oWins(ArrayList <String> location) throws InterruptedException {
-        if (location.get(0).equals("O") && location.get(1).equals("O") && location.get(2).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        } else if (location.get(6).equals("O") && location.get(4).equals("O") && location.get(2).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        }else if (location.get(6).equals("O") && location.get(7).equals("O") && location.get(8).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        } else if (location.get(0).equals("O") && location.get(3).equals("O") && location.get(6).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        } else if (location.get(1).equals("O") && location.get(4).equals("O") && location.get(7).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        } else if (location.get(2).equals("O") && location.get(5).equals("O") && location.get(8).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        }else if (location.get(3).equals("O") && location.get(4).equals("O") && location.get(5).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        }else if (location.get(0).equals("O") && location.get(4).equals("O") && location.get(8).equals("O")) {
-            System.out.println("O Wins");
-            OWINS();
-            playAgain();
-        }
-
-    }
     public static void playAgain() throws InterruptedException {
 
         String again;
@@ -113,7 +40,7 @@ public class WinnerLoser {
         Graphics.displayGraphics();
     }
     public static void OWINS() throws InterruptedException {
-
+        System.out.println("O Wins");
         System.out.println("OOOOOOOOOOOOOOOOO  ");
         System.out.println("OOOOOOOOOOOOOOOOO  ");
         System.out.println("OOOO         OOOO  ");
@@ -127,5 +54,58 @@ public class WinnerLoser {
         System.out.println("OOOOOOOOOOOOOOOOO  ");
 
         Graphics.displayGraphics();
+    }
+    public static void winner(ArrayList <String> location, String check) throws InterruptedException {
+        int oWins = 0;
+        int xWins = 1;
+        if (location.get(0).equals(check) && location.get(1).equals(check) && location.get(2).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(6).equals(check) && location.get(4).equals(check) && location.get(2).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(6).equals(check) && location.get(7).equals(check) && location.get(8).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(0).equals(check) && location.get(3).equals(check) && location.get(6).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(1).equals(check) && location.get(4).equals(check) && location.get(7).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(2).equals(check) && location.get(5).equals(check) && location.get(8).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(3).equals(check) && location.get(4).equals(check) && location.get(5).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        } else if (location.get(0).equals(check) && location.get(4).equals(check) && location.get(8).equals(check)) {
+            if(check.equalsIgnoreCase("O")){
+                oWins++; }
+            else if(check.equalsIgnoreCase("X")){
+                xWins++; }
+        }
+        if(oWins == 1){
+            OWINS();
+            playAgain();
+        }
+        else if(xWins == 2){
+            XWINS();
+            playAgain();
+        }
     }
 }

@@ -55,12 +55,14 @@ public class TicTacToe {
                 Graphics.displayGraphics();
             }
             //Call the board showing the new locations
-            WinnerLoser.xWins(location);
-            WinnerLoser.oWins(location);
+            WinnerLoser.winner(location, "X");
+            WinnerLoser.winner(location, "O");
             count++;
-            if(count == 8){
+            if(count == 9){
                 System.out.println("\nTie\n");
-                quit = false;
+                System.out.println("\nTie\n");
+                System.out.println("\nTie\n");
+                WinnerLoser.playAgain();
             }
         }
         Board.displayPlayingBoard(location);
