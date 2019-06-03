@@ -2,7 +2,7 @@ package Games;
 
 public class Graphics {
     public static void displayGraphics() throws InterruptedException {
-        System.out.print("#####################################################\n\n\n\n\n\n");
+        System.out.print("\n#####################################################\n\n\n\n\n\n");
         for(int i = 0; i<7; i++){
             Thread.sleep(350);
             System.out.print(".");
@@ -22,9 +22,9 @@ public class Graphics {
         System.out.println("       TTTTTT               IIIII        CCCC");
         System.out.println("       TTTTTT               IIIII        CCCC");
         System.out.println("       TTTTTT               IIIII        CCCC");
-        System.out.println("TTTTTTTTTTTTTTTTTTTTT IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC");
-        System.out.println("TTTTTTTTTTTTTTTTTTTTT IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC");
-        System.out.println("TTTTTTTTTTTTTTTTTTTTT IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC\n\n\n\n");
+        System.out.println("       TTTTTT         IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC");
+        System.out.println("       TTTTTT         IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC");
+        System.out.println("       TTTTTT         IIIIIIIIIIIIIIIIII CCCCCCCCCCCCCCC\n\n\n\n");
         displayGraphics();
         System.out.println("TTTTTTTTTTTTTTTTTTTTT         A          CCCCCCCCCCCCCCC");
         System.out.println("TTTTTTTTTTTTTTTTTTTTT        AAA         CCCCCCCCCCCCCCC");
@@ -39,7 +39,20 @@ public class Graphics {
         System.out.println("       TTTTTT          A             A   CCCC");
         System.out.println("       TTTTTT         AA             AA  CCCCCCCCCCCCCCC");
         System.out.println("       TTTTTT         AA             AA  CCCCCCCCCCCCCCC");
-        System.out.println("       TTTTTT         AA             AA  CCCCCCCCCCCCCCC");
+        System.out.println("       TTTTTT         AA             AA  CCCCCCCCCCCCCCC\n\n\n\n");
+        System.out.println("TTTTTTTTTTTTTTTTTTTTT OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
+        System.out.println("TTTTTTTTTTTTTTTTTTTTT OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
+        System.out.println("TTTTTTTTTTTTTTTTTTTTT OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEE");
+        System.out.println("       TTTTTT         OOOO         OOOO  EEEE");
+        System.out.println("       TTTTTT         OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
+        System.out.println("       TTTTTT         OOOOOOOOOOOOOOOOO  EEEEEEEEEEEEEEE");
     }
 
 }
