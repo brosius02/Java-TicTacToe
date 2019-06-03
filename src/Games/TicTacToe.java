@@ -54,9 +54,7 @@ public class TicTacToe {
                 }
                 Graphics.displayGraphics();
             }
-            //Call the board showing the new locations
-            WinnerLoser.winner(location, "X");
-            WinnerLoser.winner(location, "O");
+            //counts the number of total attempts
             count++;
             if(count == 9){
                 System.out.println("\nTie\n");
@@ -64,6 +62,11 @@ public class TicTacToe {
                 System.out.println("\nTie\n");
                 WinnerLoser.playAgain();
             }
+            else{
+            //Call the board showing the new locations
+            WinnerLoser.winner(location, "X");
+            WinnerLoser.winner(location, "O");}
+
         }
         Board.displayPlayingBoard(location);
     }
