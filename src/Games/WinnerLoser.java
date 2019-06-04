@@ -1,12 +1,11 @@
 package Games;
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 
 public class WinnerLoser {
-
+static int turns = 0;
     public static void playAgain() throws InterruptedException {
 
         String again;
@@ -52,10 +51,10 @@ public class WinnerLoser {
         System.out.println("OOOO         OOOO  ");
         System.out.println("OOOOOOOOOOOOOOOOO  ");
         System.out.println("OOOOOOOOOOOOOOOOO  ");
-
         Graphics.displayGraphics();
     }
-    public static void winner(ArrayList <String> location, String check) throws InterruptedException {
+    public static void winner(ArrayList <String> location, String check, int count) throws InterruptedException {
+
         int oWins = 0;
         int xWins = 1;
         if (location.get(0).equals(check) && location.get(1).equals(check) && location.get(2).equals(check)) {
@@ -106,6 +105,13 @@ public class WinnerLoser {
         else if(xWins == 2){
             XWINS();
             playAgain();
+        }
+        else if(count == 9){
+            System.out.println("\nTie\n");
+            System.out.println("\nTie\n");
+            Board.displayPlayingBoard(location);
+            System.out.println("\nTie\n");
+            WinnerLoser.playAgain();
         }
     }
 }
