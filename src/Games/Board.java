@@ -15,7 +15,6 @@ public class Board {
                 System.out.print(location.get(i));
             }
         }
-
     }
     public static void populateArraySizeToString(ArrayList<String> location){
         //It creates the the size of the array and string from 0 - 8
