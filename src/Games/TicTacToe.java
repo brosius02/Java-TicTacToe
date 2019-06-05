@@ -23,7 +23,6 @@ public class TicTacToe {
             System.out.println();
             if(count % 2 == 0){//remainder it is O's turn no remainder X's turn
                 boolean again = true;
-
                 while (again){
                     set = input.nextInt();
                     if (location.get(set).equalsIgnoreCase("O")|| location.get(set).equalsIgnoreCase("X")) {
@@ -48,18 +47,7 @@ public class TicTacToe {
             }
             //O goes next if 'count' has a remainder
             else{
-                int r;
-                Random rand = new Random();
-                boolean sameNumber = true;
-                while (sameNumber) {
-                    r = rand.nextInt(8);
-                    if (location.get(r).equalsIgnoreCase("O") || location.get(r).equalsIgnoreCase("X")) {
-                        sameNumber = true;
-                    } else {
-                        sameNumber = false;
-                        location.set(r, "O");
-                    }
-                }
+                AI.mainAI(location);
                 Graphics.displayGraphics();
             }
             //counts the number of total attempts

@@ -3,9 +3,10 @@ package Games;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static Games.Graphics.*;
 
 public class WinnerLoser {
-static int turns = 0;
+
     public static void playAgain() throws InterruptedException {
 
         String again;
@@ -22,37 +23,7 @@ static int turns = 0;
             System.exit(0);
         }
     }
-    public static void XWINS() throws InterruptedException {
-        System.out.println("XX                     XX");
-        System.out.println("  XX                 XX");
-        System.out.println("    XX             XX");
-        System.out.println("      XX         XX");
-        System.out.println("        XX     XX");
-        System.out.println("          XX XX");
-        System.out.println("           XXX");
-        System.out.println("          XX XX");
-        System.out.println("        XX     XX");
-        System.out.println("      XX         XX");
-        System.out.println("    XX             XX");
-        System.out.println("  XX                 XX");
-        System.out.println("XX                     XX");
-        Graphics.displayGraphics();
-    }
-    public static void OWINS() throws InterruptedException {
-        System.out.println("O Wins");
-        System.out.println("OOOOOOOOOOOOOOOOO  ");
-        System.out.println("OOOOOOOOOOOOOOOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOO         OOOO  ");
-        System.out.println("OOOOOOOOOOOOOOOOO  ");
-        System.out.println("OOOOOOOOOOOOOOOOO  ");
-        Graphics.displayGraphics();
-    }
+
     public static void winner(ArrayList <String> location, String check, int count) throws InterruptedException {
 
         int oWins = 0;
