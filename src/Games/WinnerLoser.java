@@ -25,12 +25,11 @@ public class WinnerLoser {
     }
 
     public static void winner(ArrayList <String> location, String check, int count) throws InterruptedException {
-
         int oWins = 0;
         int xWins = 1;
         if (location.get(1).equals(check) && location.get(2).equals(check) && location.get(3).equals(check)) {
-            if(check.equalsIgnoreCase("O")){
-                oWins++; }
+                if(check.equalsIgnoreCase("O")){
+                    oWins++; }
             else if(check.equalsIgnoreCase("X")){
                 xWins++; }
         } else if (location.get(7).equals(check) && location.get(5).equals(check) && location.get(3).equals(check)) {
